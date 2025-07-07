@@ -2,9 +2,14 @@
 
 let searchWord = '';
 
+// When first installed set the searchWord as '-ai'
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({ searchWord: '-ai' });
+});
+
 // Load the stored search word when the service worker starts
 chrome.storage.sync.get('searchWord', (data) => {
-  searchWord = data.searchWord || '';
+  searchWord = data.searchWord || '-ai';
 });
 
 // Keep the local variable in sync when the storage value changes
@@ -27,7 +32,7 @@ chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
   if (!details.url.includes('://www.google.') || !details.url.includes('/search')) return;
 
   chrome.storage.sync.get('searchWord', (data) => {
-    const searchWord = (data.searchWord || '').trim();
+    const searchWord = (data.searchWord || '-ai').trim();
     if (!searchWord) return;
 
     const url = new URL(details.url);
