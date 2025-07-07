@@ -1,0 +1,22 @@
+{
+  "name": "Query Appender",
+  "version": "1.0",
+  "description": "Automatically add a custom word or phrase to your regualr Google search.",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "tabs",
+    "webNavigation",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
