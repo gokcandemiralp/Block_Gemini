@@ -1,6 +1,6 @@
-# 🧩 Block Gemini – Smarter, Customized Google Searches
+# 🧩 Block Gemini – Customized Google Searches
 
-**Block Gemini** is a lightweight Chrome extension that automatically appends a custom word or phrase to every Google search you make — whether it's on `google.com` or typed directly into the address bar.
+**Block Gemini** is a lightweight Chrome extension that automatically appends a custom word or phrase to every Google search you make. Whether it's on `google.com` or typed directly into the address bar.
 
 ---
 
@@ -18,7 +18,7 @@
 1. Click the extension icon in your Chrome toolbar.
 2. Type in the word or phrase you want added to your searches.
 3. Click **"Change word"** to save.
-4. That’s it — all future Google searches will include your custom text automatically.
+4. That’s it. All future Google searches will include your custom text automatically.
 
 ---
 
@@ -30,14 +30,14 @@ Unzip the extension folder if it's in a .zip file.
 2. **Open Chrome Extensions Page**
 Go to chrome://extensions in your Chrome browser.
 
-3 **Enable Developer Mode**
+3. **Enable Developer Mode**
 Toggle the switch in the top-right corner to enable Developer mode.
 
-4 **Load Unpacked Extension**
+4. **Load Unpacked Extension**
 Click the "Load unpacked" button.
 Select the folder containing the extension files.
 
-5 **Confirm Installation**
+5. **Confirm Installation**
 The extension should now appear in your extensions list and be ready to use.
 
 ---
@@ -57,6 +57,6 @@ Block Gemini only modifies your Google search queries by appending your chosen t
   → _"react hook form validation stack overflow"_
 
 - **Block Gemini AI results**: Append `-ai`  
-  → _"openai competitor -ai"_
+  → _"What is scagnostics -ai"_
 
 ---
